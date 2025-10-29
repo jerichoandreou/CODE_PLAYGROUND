@@ -18,6 +18,7 @@ void initDict(Dictionary D) {
 
 int hash(int elem) {
     // TODO: Return ones digit of elem
+    return elem % 10;
 }
 
 int main() {
@@ -26,3 +27,5 @@ int main() {
     printf("Hash(27) = %d\n", hash(27));
     printf("Hash(93) = %d\n", hash(93));
 }
+//expected output:
+/*Hash(27) = 7 Hash(93) = 3*/
